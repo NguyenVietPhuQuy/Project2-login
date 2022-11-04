@@ -35,7 +35,7 @@ function checkLogin() {
     accountCheck = document.getElementById('account__login').value;
     passwordCheck = document.getElementById('account__password').value;
     for (let item of account) {
-        if (accountCheck === item.nameMember && passwordCheck === item.passwordMember) { window.location.href = "https://vercel.com/nguyenvietphuquy/project2-cyber-soft-qtk9"; alert('successful login');}
+        if (accountCheck === item.nameMember && passwordCheck === item.passwordMember) { window.location.href = "https://vercel.com/nguyenvietphuquy/project2-cyber-soft-qtk9 (link management)"; alert('successful login');}
         else {
             return alert('failed to login');
         }
