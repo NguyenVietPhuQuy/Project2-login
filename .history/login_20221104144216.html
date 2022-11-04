@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOANG KY MEMBERS</title>
+    <!--css-->
+    <link rel="stylesheet" href="css/login.css">
+    <!--fontAwesome--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="login " id="login">
+        <div class="container loginform">
+            <div class="loginform__wrap">
+                <form class="login-form">
+
+                    <div class="loginform__logo">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </div>
+
+                    <header class="Loginform__header">
+                        QS-MANAGEMENT<br /> Login
+                    </header>
+
+                    <div class="loginform__input">
+                        <input class="input" type="text" name="username" placeholder="Tên đăng nhập" id="account__login">
+                        <span class="focus-input" data-placeholder="&#xf071;"></span>
+                        <span class="validate__login" id="validate__account" style="display: none;"></span>
+
+                    </div>
+
+                    <div class="loginform__input" data-validate="Enter password">
+                        <input class="input" type="password" name="pass" placeholder="Mật khẩu" id="account__password">
+                        <span class="focus-input" data-placeholder="&#xf200;"></span>
+                        <span class="validate__login" id="validate__password" style="display: none;"></span>
+                    </div>
+
+                    <div class="loginform_signup" onclick="" id="register">
+                        <p>Đăng Ký</p>
+                    </div>
+
+                    <div class="loginform_signin">
+                        <button class="btn_signin" onclick="checkLogin()">
+                            Đăng Nhập
+                        </button>
+                    </div>
+
+                    <div class="text-center p-t-90">
+                        <a href="#">
+                            Quên mật khẩu?
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <!--================================  Modal ======================================-->
+            <section class="modal__container section" id="modal-container">
+                <div class="container">
+                    <div class="modal">
+                        <div class="modal__header">
+                            <h2>Đăng kí tài khoản</h2>
+                        </div>
+                        <button class="modal__delete" id="closeModal"><i
+                                class="fa-sharp fa-solid fa-circle-xmark"></i></button>
+                        <div class="modal__body">
+                            <form class="modal__form">
+
+                                <div class="modal__input">
+                                    <input class="input" type="text" name="" placeholder="Tên đăng nhập"
+                                        id="modal__ID" style="display:none" >
+                                    <span id="modal__spanID" style="display:none"></span>
+                                </div>
+
+                                <div class="modal__input">
+                                    <input class="input" type="text" name="" placeholder="Tên đăng nhập"
+                                        id="modal__account">
+                                    <span class="focus-input" data-placeholder="&#xf071;"></span>
+                                    <span id="modal__spanaccount" style="display:none"></span>
+                                </div>
+
+                                <div class="modal__input">
+                                    <input class="input" type="password" name="" placeholder="Mật khẩu"
+                                        id="modal__password">
+                                    <span class="focus-input" data-placeholder="&#xf071;"></span>
+                                    <span id="modal__spanpassword" style="display:none"></span>
+                                </div>
+                            
+                                <div class="modal__input">
+                                    <input class="input" type="password" name="username" placeholder="Xác nhận mật khẩu"
+                                        id="modal__repassword">
+                                    <span class="focus-input" data-placeholder="&#xf071;"></span>
+                                    <span id="modal__spanrepassword" style="display:none"></span>
+                                </div>
+
+                                <div class="modal__input">
+                                    <input class="input" type="text" name="" placeholder="nhập Gmail"
+                                        id="modal__gmail">
+                                    <span class="focus-input" data-placeholder="&#xf071;"></span>
+                                    <span id="modal__spangmail" style="display:none" ></span>
+                                </div>
+                            </form>
+                            <div class="loginform_signin">
+                                <button class="btn_signin " onclick="createMemberHK()">Đăng Kí</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js"
+        integrity="sha512-5BqtYqlWfJemW5+v+TZUs22uigI8tXeVah5S/1Z6qBLVO7gakAOtkOzUtgq6dsIo5c0NJdmGPs0H9I+2OHUHVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
+        integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/loginfunction.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
