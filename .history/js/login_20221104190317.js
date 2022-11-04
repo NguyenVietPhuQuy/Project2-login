@@ -33,9 +33,10 @@ async function getAPImember() {
 
 function checkLogin() {
     accountCheck = document.getElementById('account__login').value;
+    console.log(accountCheck)
     passwordCheck = document.getElementById('account__password').value;
     for (let item of account) {
-        if (accountCheck === item.nameMember && passwordCheck === item.passwordMember) { window.location.href = "https://project2-cyber-soft-qtk9-8d405nbx9-nguyenvietphuquy.vercel.app/"; alert('successful login');}
+        if (accountCheck === item.nameMember && passwordCheck === item.passwordMember) { window.location.href = "https://project2-cyber-soft-qtk9-8d405nbx9-nguyenvietphuquy.vercel.app/"; alert('successful login'); break }
         else {
             return alert('failed to login');
         }
